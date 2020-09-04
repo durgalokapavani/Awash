@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Light.ttf">
+            <string>Rubik-Light</string>
+        </array>
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController" customModule="AwashiOS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="5gw-at-C7U">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQG-9u-1s2">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJ9-3w-HM0">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oV5-wx-dTB">
+                                    <rect key="frame" x="0.0" y="577" width="375" height="50"/>
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="gza-mW-QBh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                    <state key="normal" title="Done">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="closeTapped:" destination="-1" eventType="touchUpInside" id="1n0-5g-VHM"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="dys-Uk-QOr">
+                                    <rect key="frame" x="164" y="30" width="46" height="56"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Different Kind of Mindfulness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58e-MI-82Y">
+                                    <rect key="frame" x="68" y="116" width="239" height="19"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Part meditation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxT-hp-AbE">
+                                    <rect key="frame" x="129" y="162" width="116" height="19"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Part motivation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYh-X3-VWT">
+                                    <rect key="frame" x="129" y="208" width="116" height="19"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Part Self-Reflection" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezG-Fh-U1d">
+                                    <rect key="frame" x="114" y="254" width="147" height="19"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jig-5n-DOY">
+                                    <rect key="frame" x="20" y="313" width="335" height="190"/>
+                                    <string key="text">Awash brings a hybrid blend within each session delivering a meditation component for the peace we need, a motivational flare for energy that drives us and a self-reflective rigor that make us grow. All sessions are handcrafted by real people, with have dealt with real life and understand the real challenges that make Awash the perfect app for calming anxiety, de-stressing and discovering the path of self-growth.</string>
+                                    <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="ezG-Fh-U1d" firstAttribute="top" secondItem="cYh-X3-VWT" secondAttribute="bottom" constant="27" id="3rw-1v-C4W"/>
+                                <constraint firstItem="ezG-Fh-U1d" firstAttribute="centerX" secondItem="RJ9-3w-HM0" secondAttribute="centerX" id="8O4-71-zxP"/>
+                                <constraint firstItem="jig-5n-DOY" firstAttribute="centerX" secondItem="RJ9-3w-HM0" secondAttribute="centerX" id="96W-4E-Rgt"/>
+                                <constraint firstItem="cYh-X3-VWT" firstAttribute="top" secondItem="BxT-hp-AbE" secondAttribute="bottom" constant="27" id="C1P-lx-Tkc"/>
+                                <constraint firstItem="jig-5n-DOY" firstAttribute="top" secondItem="ezG-Fh-U1d" secondAttribute="bottom" constant="40" id="NJY-TS-X1m"/>
+                                <constraint firstItem="58e-MI-82Y" firstAttribute="centerX" secondItem="RJ9-3w-HM0" secondAttribute="centerX" id="Sjt-P7-Uej"/>
+                                <constraint firstItem="oV5-wx-dTB" firstAttribute="leading" secondItem="RJ9-3w-HM0" secondAttribute="leading" id="a1e-1d-2QX"/>
+                                <constraint firstAttribute="trailing" secondItem="oV5-wx-dTB" secondAttribute="trailing" id="c3X-4w-Lmc"/>
+                                <constraint firstItem="jig-5n-DOY" firstAttribute="leading" secondItem="RJ9-3w-HM0" secondAttribute="leading" constant="20" id="ehu-al-oGk"/>
+                                <constraint firstAttribute="bottom" secondItem="oV5-wx-dTB" secondAttribute="bottom" constant="20" id="fBF-Ba-kXx"/>
+                                <constraint firstItem="dys-Uk-QOr" firstAttribute="top" secondItem="RJ9-3w-HM0" secondAttribute="top" constant="30" id="fEj-d8-XnC"/>
+                                <constraint firstItem="dys-Uk-QOr" firstAttribute="centerX" secondItem="RJ9-3w-HM0" secondAttribute="centerX" id="h9Z-ZR-e8A"/>
+                                <constraint firstItem="BxT-hp-AbE" firstAttribute="centerX" secondItem="RJ9-3w-HM0" secondAttribute="centerX" id="iuO-6a-ESe"/>
+                                <constraint firstItem="cYh-X3-VWT" firstAttribute="centerX" secondItem="RJ9-3w-HM0" secondAttribute="centerX" id="kug-hT-WZ8"/>
+                                <constraint firstItem="58e-MI-82Y" firstAttribute="top" secondItem="dys-Uk-QOr" secondAttribute="bottom" constant="30" id="oHa-yO-tZe"/>
+                                <constraint firstAttribute="trailing" secondItem="jig-5n-DOY" secondAttribute="trailing" constant="20" id="xlZ-Rk-t6S"/>
+                                <constraint firstItem="BxT-hp-AbE" firstAttribute="top" secondItem="58e-MI-82Y" secondAttribute="bottom" constant="27" id="yrm-NA-JEe"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="RJ9-3w-HM0" secondAttribute="bottom" id="L27-S1-tSz"/>
+                        <constraint firstItem="RJ9-3w-HM0" firstAttribute="leading" secondItem="iQG-9u-1s2" secondAttribute="leading" id="PQu-6F-50d"/>
+                        <constraint firstItem="RJ9-3w-HM0" firstAttribute="top" secondItem="iQG-9u-1s2" secondAttribute="top" id="QGd-Gn-fme"/>
+                        <constraint firstItem="RJ9-3w-HM0" firstAttribute="height" secondItem="iQG-9u-1s2" secondAttribute="height" priority="250" id="dGp-Bw-2JY"/>
+                        <constraint firstAttribute="trailing" secondItem="RJ9-3w-HM0" secondAttribute="trailing" id="frf-k2-FVx"/>
+                        <constraint firstItem="RJ9-3w-HM0" firstAttribute="width" secondItem="iQG-9u-1s2" secondAttribute="width" id="i8H-DT-eJL"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="hXf-nU-yZv"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iQG-9u-1s2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3kb-q7-sBG"/>
+                <constraint firstItem="iQG-9u-1s2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6bt-YH-P9P"/>
+                <constraint firstItem="5gw-at-C7U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7F4-2E-7ST"/>
+                <constraint firstItem="5gw-at-C7U" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="b5P-Fp-hsM"/>
+                <constraint firstItem="5gw-at-C7U" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c3j-3q-ur3"/>
+                <constraint firstItem="iQG-9u-1s2" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="gGe-it-A82"/>
+                <constraint firstItem="5gw-at-C7U" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="tob-uw-t0a"/>
+                <constraint firstItem="iQG-9u-1s2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" id="ztN-PM-cu9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gradient" width="704" height="1252"/>
+        <image name="logoWhite" width="46" height="56"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_AwashiOS_Dev {
+  umbrella header "Pods-AwashiOS Dev-umbrella.h"
+
+  export *
+  module * { export * }
+}

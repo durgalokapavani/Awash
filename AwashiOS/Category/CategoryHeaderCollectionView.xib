@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryHeaderCollectionView" id="U6b-Vx-4bR" customClass="CategoryHeaderCollectionView" customModule="AwashiOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="303" height="295"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morning Meditation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v31-0Y-hel">
+                    <rect key="frame" x="68" y="29.5" width="215" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="MFI-NR-qxt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.1764705882352941" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbB-Vg-JCf">
+                    <rect key="frame" x="20" y="69.5" width="263" height="104.5"/>
+                    <string key="text">Morning rinse is your path to insightful, invigorating and purposeful days. Align the mind, body, and spirit to take each day to the next level</string>
+                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.1764705882" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4j4-o7-7Zm" userLabel="Separator">
+                    <rect key="frame" x="20" y="194" width="263" height="1"/>
+                    <color key="backgroundColor" red="0.094117647058823528" green="0.38823529411764707" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="h2u-o6-1bW"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzh-3t-Lll" customClass="RoundUIView" customModule="AwashiOS" customModuleProvider="target">
+                    <rect key="frame" x="20" y="215" width="263" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awq-mB-ACO" customClass="RoundUILabel" customModule="AwashiOS" customModuleProvider="target">
+                            <rect key="frame" x="11" y="10" width="241" height="40"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Ie8-xt-LAC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="9qm-Ce-38h"/>
+                        <constraint firstItem="Awq-mB-ACO" firstAttribute="leading" secondItem="hzh-3t-Lll" secondAttribute="leading" constant="11" id="DZf-9N-OfY"/>
+                        <constraint firstItem="Awq-mB-ACO" firstAttribute="centerY" secondItem="hzh-3t-Lll" secondAttribute="centerY" id="Ioc-3H-Ovt"/>
+                        <constraint firstAttribute="trailing" secondItem="Awq-mB-ACO" secondAttribute="trailing" constant="11" id="N6o-DK-XDM"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderColorAlpha">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pondr_logo" translatesAutoresizingMaskIntoConstraints="NO" id="LGC-22-pgI">
+                    <rect key="frame" x="20" y="22" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="dkZ-Yc-X7Y"/>
+                        <constraint firstAttribute="width" constant="40" id="nOc-R2-s7E"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hzh-3t-Lll" firstAttribute="leading" secondItem="4j4-o7-7Zm" secondAttribute="leading" id="85J-E0-AH3"/>
+                <constraint firstItem="hzh-3t-Lll" firstAttribute="trailing" secondItem="4j4-o7-7Zm" secondAttribute="trailing" id="8WH-i0-RS0"/>
+                <constraint firstItem="LGC-22-pgI" firstAttribute="centerY" secondItem="v31-0Y-hel" secondAttribute="centerY" id="DMi-60-MI8"/>
+                <constraint firstItem="v31-0Y-hel" firstAttribute="leading" secondItem="LGC-22-pgI" secondAttribute="trailing" constant="8" id="DrU-8e-aQp"/>
+                <constraint firstItem="fbB-Vg-JCf" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="20" id="Ha4-hD-3yI"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="fbB-Vg-JCf" secondAttribute="trailing" constant="20" id="IAI-G4-c24"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="4j4-o7-7Zm" secondAttribute="trailing" constant="20" id="IYJ-3x-3HX"/>
+                <constraint firstItem="4j4-o7-7Zm" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="20" id="Pbt-xj-GKC"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="hzh-3t-Lll" secondAttribute="bottom" constant="20" id="SDV-yy-rlz"/>
+                <constraint firstItem="fbB-Vg-JCf" firstAttribute="top" secondItem="v31-0Y-hel" secondAttribute="bottom" constant="15" id="SqP-zF-01K"/>
+                <constraint firstItem="hzh-3t-Lll" firstAttribute="top" secondItem="4j4-o7-7Zm" secondAttribute="bottom" constant="20" id="i2w-zY-aFf"/>
+                <constraint firstItem="v31-0Y-hel" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="29.5" id="vmA-HB-Fhw"/>
+                <constraint firstItem="LGC-22-pgI" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="20" id="ywz-ZM-3kW"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="v31-0Y-hel" secondAttribute="trailing" constant="20" id="z2q-9U-qbG"/>
+                <constraint firstItem="4j4-o7-7Zm" firstAttribute="top" secondItem="fbB-Vg-JCf" secondAttribute="bottom" constant="20" id="zEP-oD-aZw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="details" destination="fbB-Vg-JCf" id="NGA-LD-vOb"/>
+                <outlet property="purchaseViewHeight" destination="9qm-Ce-38h" id="AcV-82-Oaf"/>
+                <outlet property="title" destination="v31-0Y-hel" id="2ur-US-dC0"/>
+            </connections>
+            <point key="canvasLocation" x="-339" y="-2"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="pondr_logo" width="209" height="209"/>
+    </resources>
+</document>

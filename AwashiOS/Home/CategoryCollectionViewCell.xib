@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CategoryCollectionViewCell" customModule="AwashiOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="370"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="370"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d17-Uz-g5O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="370"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro" translatesAutoresizingMaskIntoConstraints="NO" id="Blf-fK-4GZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="370"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morning Jumpstart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYm-C7-hPp">
+                                <rect key="frame" x="20" y="252" width="280" height="21.5"/>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="18"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJp-Iy-3MG">
+                                <rect key="frame" x="20" y="283.5" width="280" height="66.5"/>
+                                <string key="text">Morning rinse is your path to insightful, invigorating and purposeful days. Align the mind, body, and spirit to take each day to the next level.</string>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Blf-fK-4GZ" firstAttribute="top" secondItem="d17-Uz-g5O" secondAttribute="top" id="1P9-8C-z77"/>
+                            <constraint firstAttribute="trailing" secondItem="pJp-Iy-3MG" secondAttribute="trailing" constant="20" id="52V-ea-yyj"/>
+                            <constraint firstItem="GYm-C7-hPp" firstAttribute="leading" secondItem="d17-Uz-g5O" secondAttribute="leading" constant="20" id="6Ik-9a-LTo"/>
+                            <constraint firstItem="Blf-fK-4GZ" firstAttribute="leading" secondItem="d17-Uz-g5O" secondAttribute="leading" id="AKy-1T-lv8"/>
+                            <constraint firstAttribute="trailing" secondItem="GYm-C7-hPp" secondAttribute="trailing" constant="20" id="Esa-JT-RpL"/>
+                            <constraint firstAttribute="bottom" secondItem="pJp-Iy-3MG" secondAttribute="bottom" constant="20" id="KMt-eh-nML"/>
+                            <constraint firstAttribute="trailing" secondItem="Blf-fK-4GZ" secondAttribute="trailing" id="QOl-tW-vGK"/>
+                            <constraint firstItem="pJp-Iy-3MG" firstAttribute="top" secondItem="GYm-C7-hPp" secondAttribute="bottom" constant="10" id="RCd-xZ-nT8"/>
+                            <constraint firstItem="pJp-Iy-3MG" firstAttribute="leading" secondItem="d17-Uz-g5O" secondAttribute="leading" constant="20" id="TCM-b2-x7A"/>
+                            <constraint firstAttribute="bottom" secondItem="Blf-fK-4GZ" secondAttribute="bottom" id="hhP-bC-rg8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="d17-Uz-g5O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7rt-kk-qbd"/>
+                <constraint firstItem="d17-Uz-g5O" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GYk-SY-TvZ"/>
+                <constraint firstAttribute="trailing" secondItem="d17-Uz-g5O" secondAttribute="trailing" id="Vy3-7c-Z4e"/>
+                <constraint firstAttribute="bottom" secondItem="d17-Uz-g5O" secondAttribute="bottom" id="qp5-AM-oiL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="290" height="387"/>
+            <connections>
+                <outlet property="details" destination="pJp-Iy-3MG" id="sQl-Bx-2UK"/>
+                <outlet property="imageView" destination="Blf-fK-4GZ" id="SAg-f0-Gtf"/>
+                <outlet property="title" destination="GYm-C7-hPp" id="fAa-Cc-3uW"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="125.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="intro" width="187" height="406"/>
+    </resources>
+</document>

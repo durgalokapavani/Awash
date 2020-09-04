@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubscriptionsViewController" customModule="AwashiOS" customModuleProvider="target">
+            <connections>
+                <outlet property="annualPrice" destination="ps7-p7-DUd" id="t3g-5Y-Uvb"/>
+                <outlet property="monthly" destination="RVY-el-0bw" id="18E-CM-fzZ"/>
+                <outlet property="monthlyPrice" destination="u3D-ng-LBw" id="Vap-vI-qY4"/>
+                <outlet property="subscribeAnually" destination="9gf-jb-cDo" id="9DS-mP-cYF"/>
+                <outlet property="subscribeMonthly" destination="6VQ-SQ-oOQ" id="0oY-ev-Jpd"/>
+                <outlet property="terms" destination="TvK-PZ-AEl" id="ltX-Ca-1Qi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yearly" destination="DUb-6Q-WWA" id="FNc-QC-wUI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="938"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient" translatesAutoresizingMaskIntoConstraints="NO" id="twX-gV-05q">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="938"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMS-a3-RaB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="938"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvs-9w-jfg">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="770"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMf-Xm-URR">
+                                    <rect key="frame" x="160" y="60" width="55" height="55"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="55" id="FOB-ik-TFY"/>
+                                        <constraint firstAttribute="width" constant="55" id="GGZ-OH-ebC"/>
+                                    </constraints>
+                                    <state key="normal" title="Button" image="dismissOutline"/>
+                                    <connections>
+                                        <action selector="dismiss" destination="-1" eventType="touchUpInside" id="U2S-1W-CL0"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVY-el-0bw" userLabel="Monthly">
+                                    <rect key="frame" x="15" y="323" width="345" height="135"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Monthly Subscription" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8q-4H-9Fs">
+                                            <rect key="frame" x="15" y="8" width="315" height="18"/>
+                                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.1764705882" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recurring billing. Cancel anytime" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7MK-1D-mHO">
+                                            <rect key="frame" x="5" y="30" width="335" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Gku-2h-a45"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VQ-SQ-oOQ">
+                                            <rect key="frame" x="230" y="81" width="100" height="34"/>
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="6Xu-Cc-Ahd"/>
+                                                <constraint firstAttribute="height" constant="34" id="MOJ-Zq-IQv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="15"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Unlock"/>
+                                            <connections>
+                                                <action selector="monthlyTapped:" destination="-1" eventType="touchUpInside" id="a7A-gV-ngv"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3D-ng-LBw">
+                                            <rect key="frame" x="15" y="80" width="73.5" height="36"/>
+                                            <string key="text">$7.99 
+per Month</string>
+                                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="15"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="25"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="Z8q-4H-9Fs" firstAttribute="leading" secondItem="RVY-el-0bw" secondAttribute="leading" constant="15" id="1N1-wD-rr8"/>
+                                        <constraint firstItem="u3D-ng-LBw" firstAttribute="leading" secondItem="RVY-el-0bw" secondAttribute="leading" constant="15" id="5JG-WQ-16g"/>
+                                        <constraint firstItem="u3D-ng-LBw" firstAttribute="centerY" secondItem="6VQ-SQ-oOQ" secondAttribute="centerY" id="IDA-LQ-kAy"/>
+                                        <constraint firstItem="6VQ-SQ-oOQ" firstAttribute="top" secondItem="7MK-1D-mHO" secondAttribute="bottom" constant="30" id="ILJ-Qv-U8M"/>
+                                        <constraint firstItem="7MK-1D-mHO" firstAttribute="leading" secondItem="RVY-el-0bw" secondAttribute="leading" constant="5" id="ITP-Uo-K8c"/>
+                                        <constraint firstAttribute="trailing" secondItem="6VQ-SQ-oOQ" secondAttribute="trailing" constant="15" id="Ob6-kA-rps"/>
+                                        <constraint firstItem="Z8q-4H-9Fs" firstAttribute="top" secondItem="RVY-el-0bw" secondAttribute="top" constant="8" id="f5q-KM-jGg"/>
+                                        <constraint firstAttribute="trailing" secondItem="7MK-1D-mHO" secondAttribute="trailing" constant="5" id="jNC-lg-FcB"/>
+                                        <constraint firstAttribute="bottom" secondItem="6VQ-SQ-oOQ" secondAttribute="bottom" constant="20" id="yEC-a8-7PE"/>
+                                        <constraint firstItem="7MK-1D-mHO" firstAttribute="top" secondItem="Z8q-4H-9Fs" secondAttribute="bottom" constant="4" id="yY5-2z-Bth"/>
+                                        <constraint firstAttribute="trailing" secondItem="Z8q-4H-9Fs" secondAttribute="trailing" constant="15" id="zFU-wU-1es"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscribe to get access to all current and future content." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jof-oR-NBj">
+                                    <rect key="frame" x="30" y="145" width="315" height="36"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hand crafted mindfulness sessions added bi-weekly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWG-cL-Hpd">
+                                    <rect key="frame" x="30" y="201" width="315" height="36"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A unique blend of meditation, motivation and self-reflection." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCs-qm-t26">
+                                    <rect key="frame" x="30" y="257" width="315" height="36"/>
+                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUb-6Q-WWA" userLabel="Yearly">
+                                    <rect key="frame" x="15" y="478" width="345" height="145"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Yearly Subscription" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPq-xH-ygs">
+                                            <rect key="frame" x="15" y="8" width="315" height="18"/>
+                                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.1764705882" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recurring billing. Cancel anytime" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hY-pg-8oQ">
+                                            <rect key="frame" x="5" y="30" width="335" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="xQe-fZ-59z"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gf-jb-cDo">
+                                            <rect key="frame" x="230" y="81" width="100" height="34"/>
+                                            <color key="backgroundColor" red="1" green="0.0" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="8vq-NX-P3m"/>
+                                                <constraint firstAttribute="height" constant="34" id="lNd-nt-A42"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="15"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Unlock"/>
+                                            <connections>
+                                                <action selector="anuallyTapped:" destination="-1" eventType="touchUpInside" id="RCl-bc-Nci"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ps7-p7-DUd">
+                                            <rect key="frame" x="15" y="80.5" width="101.5" height="36"/>
+                                            <string key="text">$71.99
+per Year</string>
+                                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="15"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="25"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="6hY-pg-8oQ" firstAttribute="top" secondItem="aPq-xH-ygs" secondAttribute="bottom" constant="4" id="5Ws-Ut-P0d"/>
+                                        <constraint firstItem="ps7-p7-DUd" firstAttribute="leading" secondItem="DUb-6Q-WWA" secondAttribute="leading" constant="15" id="BTg-nq-KU3"/>
+                                        <constraint firstItem="9gf-jb-cDo" firstAttribute="top" secondItem="6hY-pg-8oQ" secondAttribute="bottom" constant="30" id="Hy2-V1-4bS"/>
+                                        <constraint firstItem="aPq-xH-ygs" firstAttribute="leading" secondItem="DUb-6Q-WWA" secondAttribute="leading" constant="15" id="V26-dQ-bBs"/>
+                                        <constraint firstAttribute="trailing" secondItem="6hY-pg-8oQ" secondAttribute="trailing" constant="5" id="c4B-lG-RQ9"/>
+                                        <constraint firstItem="aPq-xH-ygs" firstAttribute="top" secondItem="DUb-6Q-WWA" secondAttribute="top" constant="8" id="eNu-pJ-8du"/>
+                                        <constraint firstItem="ps7-p7-DUd" firstAttribute="centerY" secondItem="9gf-jb-cDo" secondAttribute="centerY" id="hVN-ww-Wk5"/>
+                                        <constraint firstAttribute="trailing" secondItem="9gf-jb-cDo" secondAttribute="trailing" constant="15" id="jj4-0i-4Ed"/>
+                                        <constraint firstItem="6hY-pg-8oQ" firstAttribute="leading" secondItem="DUb-6Q-WWA" secondAttribute="leading" constant="5" id="poX-5a-gmX"/>
+                                        <constraint firstItem="ps7-p7-DUd" firstAttribute="centerX" secondItem="DUb-6Q-WWA" secondAttribute="centerX" constant="-106.75" id="r25-Uu-d84"/>
+                                        <constraint firstAttribute="bottom" secondItem="9gf-jb-cDo" secondAttribute="bottom" constant="30" id="zdP-qW-yrW"/>
+                                        <constraint firstAttribute="trailing" secondItem="aPq-xH-ygs" secondAttribute="trailing" constant="15" id="zxE-uU-ijp"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvK-PZ-AEl">
+                                    <rect key="frame" x="15" y="683" width="345" height="57"/>
+                                    <string key="text">Subscription Terms: After purchase, monthly and yearly subcriptions will automiatically renew unless turned off in Account Settings at least 24H before the current period ends. Payments are charged to your iTunes account. </string>
+                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xn0-iC-4Ns">
+                                    <rect key="frame" x="76" y="635" width="223" height="48"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sH5-j5-V4d">
+                                            <rect key="frame" x="0.0" y="10" width="115" height="28"/>
+                                            <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                            <state key="normal" title="Terms &amp; Contitions">
+                                                <color key="titleColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="openTerms" destination="-1" eventType="touchUpInside" id="eYl-oP-XIH"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qK-X9-YPF">
+                                            <rect key="frame" x="139" y="10" width="84" height="28"/>
+                                            <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                            <state key="normal" title="Privacy Policy">
+                                                <color key="titleColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="openPrivacyPolicy" destination="-1" eventType="touchUpInside" id="cyy-ZN-bYf"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oR-OC-84a">
+                                            <rect key="frame" x="115" y="14" width="24" height="20.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="24" id="53W-LE-Ezh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="0qK-X9-YPF" firstAttribute="centerY" secondItem="Xn0-iC-4Ns" secondAttribute="centerY" id="3Oq-GA-7xA"/>
+                                        <constraint firstAttribute="trailing" secondItem="0qK-X9-YPF" secondAttribute="trailing" id="M1S-Jt-70P"/>
+                                        <constraint firstItem="sH5-j5-V4d" firstAttribute="leading" secondItem="Xn0-iC-4Ns" secondAttribute="leading" id="Mbu-1k-Npo"/>
+                                        <constraint firstItem="sH5-j5-V4d" firstAttribute="centerY" secondItem="Xn0-iC-4Ns" secondAttribute="centerY" id="Ved-WY-cIQ"/>
+                                        <constraint firstItem="0qK-X9-YPF" firstAttribute="leading" secondItem="1oR-OC-84a" secondAttribute="trailing" id="ine-OX-zZd"/>
+                                        <constraint firstItem="1oR-OC-84a" firstAttribute="leading" secondItem="sH5-j5-V4d" secondAttribute="trailing" id="jO3-uV-LKD"/>
+                                        <constraint firstAttribute="height" constant="48" id="jdy-qb-gZH"/>
+                                        <constraint firstItem="1oR-OC-84a" firstAttribute="centerY" secondItem="Xn0-iC-4Ns" secondAttribute="centerY" id="ujo-ND-hSk"/>
+                                        <constraint firstItem="1oR-OC-84a" firstAttribute="centerY" secondItem="sH5-j5-V4d" secondAttribute="centerY" id="zqc-HA-bNs"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="xCs-qm-t26" firstAttribute="top" secondItem="pWG-cL-Hpd" secondAttribute="bottom" constant="20" id="1aP-iL-lba"/>
+                                <constraint firstItem="ZMf-Xm-URR" firstAttribute="top" secondItem="kvs-9w-jfg" secondAttribute="top" constant="60" id="3Z0-ku-eAv"/>
+                                <constraint firstItem="TvK-PZ-AEl" firstAttribute="leading" secondItem="kvs-9w-jfg" secondAttribute="leading" constant="15" id="3vs-OF-5G1"/>
+                                <constraint firstItem="Xn0-iC-4Ns" firstAttribute="centerX" secondItem="kvs-9w-jfg" secondAttribute="centerX" id="6cM-ZH-Z7p"/>
+                                <constraint firstAttribute="trailing" secondItem="pWG-cL-Hpd" secondAttribute="trailing" constant="30" id="Bp8-L1-CY7"/>
+                                <constraint firstItem="TvK-PZ-AEl" firstAttribute="top" secondItem="Xn0-iC-4Ns" secondAttribute="bottom" id="DBg-5m-bm3"/>
+                                <constraint firstItem="TvK-PZ-AEl" firstAttribute="top" secondItem="DUb-6Q-WWA" secondAttribute="bottom" constant="60" id="E6a-2J-0xv"/>
+                                <constraint firstAttribute="trailing" secondItem="TvK-PZ-AEl" secondAttribute="trailing" constant="15" id="KMJ-zM-c0q"/>
+                                <constraint firstAttribute="trailing" secondItem="xCs-qm-t26" secondAttribute="trailing" constant="30" id="MDL-f9-CtZ"/>
+                                <constraint firstItem="jof-oR-NBj" firstAttribute="leading" secondItem="kvs-9w-jfg" secondAttribute="leading" constant="30" id="NGS-Vo-RLH"/>
+                                <constraint firstAttribute="bottom" secondItem="TvK-PZ-AEl" secondAttribute="bottom" constant="30" id="SPT-Y6-R6G"/>
+                                <constraint firstAttribute="trailing" secondItem="DUb-6Q-WWA" secondAttribute="trailing" constant="15" id="UxZ-LE-zrl"/>
+                                <constraint firstItem="RVY-el-0bw" firstAttribute="top" secondItem="xCs-qm-t26" secondAttribute="bottom" constant="30" id="WVY-Cm-fEf"/>
+                                <constraint firstItem="DUb-6Q-WWA" firstAttribute="leading" secondItem="kvs-9w-jfg" secondAttribute="leading" constant="15" id="aNz-i5-uk2"/>
+                                <constraint firstItem="jof-oR-NBj" firstAttribute="top" secondItem="ZMf-Xm-URR" secondAttribute="bottom" constant="30" id="cVN-SO-Ufn"/>
+                                <constraint firstItem="pWG-cL-Hpd" firstAttribute="top" secondItem="jof-oR-NBj" secondAttribute="bottom" constant="20" id="j3j-iG-dmt"/>
+                                <constraint firstItem="RVY-el-0bw" firstAttribute="leading" secondItem="kvs-9w-jfg" secondAttribute="leading" constant="15" id="l7f-o7-DAg"/>
+                                <constraint firstItem="pWG-cL-Hpd" firstAttribute="leading" secondItem="kvs-9w-jfg" secondAttribute="leading" constant="30" id="sgq-n9-Qe8"/>
+                                <constraint firstItem="ZMf-Xm-URR" firstAttribute="centerX" secondItem="kvs-9w-jfg" secondAttribute="centerX" id="wLV-zm-e9D"/>
+                                <constraint firstAttribute="trailing" secondItem="jof-oR-NBj" secondAttribute="trailing" constant="30" id="wbQ-Iu-tvR"/>
+                                <constraint firstItem="DUb-6Q-WWA" firstAttribute="top" secondItem="RVY-el-0bw" secondAttribute="bottom" constant="20" id="yac-S0-JP9"/>
+                                <constraint firstAttribute="trailing" secondItem="RVY-el-0bw" secondAttribute="trailing" constant="15" id="ydP-AS-ar5"/>
+                                <constraint firstItem="xCs-qm-t26" firstAttribute="leading" secondItem="kvs-9w-jfg" secondAttribute="leading" constant="30" id="yl6-gw-YbZ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="kvs-9w-jfg" firstAttribute="top" secondItem="LMS-a3-RaB" secondAttribute="top" id="E2C-ph-F2l"/>
+                        <constraint firstAttribute="trailing" secondItem="kvs-9w-jfg" secondAttribute="trailing" id="FAO-ko-sao"/>
+                        <constraint firstAttribute="bottom" secondItem="kvs-9w-jfg" secondAttribute="bottom" id="Kxg-gp-6DB"/>
+                        <constraint firstItem="kvs-9w-jfg" firstAttribute="height" secondItem="LMS-a3-RaB" secondAttribute="height" priority="250" id="SLY-Gf-Q79"/>
+                        <constraint firstItem="kvs-9w-jfg" firstAttribute="width" secondItem="LMS-a3-RaB" secondAttribute="width" id="WSr-1a-kXS"/>
+                        <constraint firstItem="kvs-9w-jfg" firstAttribute="leading" secondItem="LMS-a3-RaB" secondAttribute="leading" id="cFt-x7-IQo"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="NYO-QS-VtE"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="twX-gV-05q" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="OUp-Ru-zsB"/>
+                <constraint firstItem="LMS-a3-RaB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RpH-zN-jpF"/>
+                <constraint firstItem="LMS-a3-RaB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aeH-mN-fEY"/>
+                <constraint firstItem="twX-gV-05q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ehc-vd-fSA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="LMS-a3-RaB" secondAttribute="bottom" id="kna-YK-ftD"/>
+                <constraint firstItem="twX-gV-05q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="msQ-EF-ytx"/>
+                <constraint firstItem="LMS-a3-RaB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="pmO-lq-ycy"/>
+                <constraint firstAttribute="bottom" secondItem="twX-gV-05q" secondAttribute="bottom" id="y2S-AS-MTV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="tkG-Fu-1Qv" appends="YES" id="YmU-My-TLA"/>
+            </connections>
+            <point key="canvasLocation" x="23.5" y="373"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="tkG-Fu-1Qv">
+            <connections>
+                <action selector="panGestureRecognizerHandler:" destination="-1" id="d4K-e1-amu"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="dismissOutline" width="55" height="55"/>
+        <image name="gradient" width="704" height="1252"/>
+    </resources>
+</document>

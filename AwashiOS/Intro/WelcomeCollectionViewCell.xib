@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WelcomeCollectionViewCell" id="gTV-IL-0wX" customClass="WelcomeCollectionViewCell" customModule="AwashiOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="380"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="380"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7WH-Bs-Yuf" userLabel="Welcome">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="380"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pondr_logo" translatesAutoresizingMaskIntoConstraints="NO" id="S5f-we-P9l">
+                                <rect key="frame" x="46" y="32.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="BEd-xv-r0B"/>
+                                    <constraint firstAttribute="height" constant="40" id="OAW-lq-hnI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Pondr This!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBb-js-8sq">
+                                <rect key="frame" x="94" y="40" width="112.5" height="25"/>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="21"/>
+                                <color key="textColor" red="0.59607843140000005" green="0.71372549019999998" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUI-sr-jCo">
+                                <rect key="frame" x="15" y="80" width="270" height="208"/>
+                                <string key="text">Awash is part meditation, part motivation, and part self-revelation. Our mission and goal is to make you Pondr. Awash's mindfulness content blends short snackable sessions where one will encounter thoughtful insights and thought provoking content crafted to make you do one thing; to think about (something) carefully. </string>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.1764705882" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0a-Bv-8O0">
+                                <rect key="frame" x="15" y="296" width="270" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="CZ4-HG-ls9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="      Pondr This First! "/>
+                                <connections>
+                                    <action selector="listenTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="fEN-qb-slX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playWhite" translatesAutoresizingMaskIntoConstraints="NO" id="Izx-eb-lr2">
+                                <rect key="frame" x="263" y="311.5" width="10" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="4L3-qD-WWh"/>
+                                    <constraint firstAttribute="height" constant="13" id="bCS-ze-bTO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="KBb-js-8sq" firstAttribute="leading" secondItem="S5f-we-P9l" secondAttribute="trailing" constant="8" id="07l-HO-Mx2"/>
+                            <constraint firstItem="KBb-js-8sq" firstAttribute="top" secondItem="7WH-Bs-Yuf" secondAttribute="top" constant="40" id="3pT-En-pEN"/>
+                            <constraint firstAttribute="bottom" secondItem="f0a-Bv-8O0" secondAttribute="bottom" constant="40" id="AnD-Ob-A2q"/>
+                            <constraint firstItem="KBb-js-8sq" firstAttribute="centerX" secondItem="7WH-Bs-Yuf" secondAttribute="centerX" id="Kyf-as-JAj"/>
+                            <constraint firstItem="Izx-eb-lr2" firstAttribute="centerY" secondItem="f0a-Bv-8O0" secondAttribute="centerY" id="OOq-34-MYy"/>
+                            <constraint firstItem="f0a-Bv-8O0" firstAttribute="top" secondItem="aUI-sr-jCo" secondAttribute="bottom" constant="8" id="S5Y-Sa-4X3"/>
+                            <constraint firstAttribute="height" constant="380" id="ThY-oJ-hYm"/>
+                            <constraint firstItem="Izx-eb-lr2" firstAttribute="trailing" secondItem="f0a-Bv-8O0" secondAttribute="trailing" constant="-12" id="Wn3-Qy-v0I"/>
+                            <constraint firstAttribute="trailing" secondItem="f0a-Bv-8O0" secondAttribute="trailing" constant="15" id="e9V-gJ-hWq"/>
+                            <constraint firstItem="S5f-we-P9l" firstAttribute="centerY" secondItem="KBb-js-8sq" secondAttribute="centerY" id="frO-eO-rWH"/>
+                            <constraint firstItem="f0a-Bv-8O0" firstAttribute="leading" secondItem="7WH-Bs-Yuf" secondAttribute="leading" constant="15" id="iKE-6L-E67"/>
+                            <constraint firstItem="aUI-sr-jCo" firstAttribute="top" secondItem="KBb-js-8sq" secondAttribute="bottom" constant="15" id="lEi-NN-R8P"/>
+                            <constraint firstAttribute="trailing" secondItem="aUI-sr-jCo" secondAttribute="trailing" constant="15" id="syA-3A-N4d"/>
+                            <constraint firstItem="aUI-sr-jCo" firstAttribute="leading" secondItem="7WH-Bs-Yuf" secondAttribute="leading" constant="15" id="y0J-Ru-rxl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="7WH-Bs-Yuf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2Iv-Nd-pLx"/>
+                <constraint firstItem="7WH-Bs-Yuf" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="M3j-46-coq"/>
+                <constraint firstAttribute="trailing" secondItem="7WH-Bs-Yuf" secondAttribute="trailing" id="hRK-jh-9ty"/>
+                <constraint firstItem="7WH-Bs-Yuf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="vnb-by-jkY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="listen" destination="f0a-Bv-8O0" id="EPh-NL-7M8"/>
+                <outlet property="welcomeView" destination="7WH-Bs-Yuf" id="QuW-su-3fD"/>
+            </connections>
+            <point key="canvasLocation" x="-115" y="15"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="playWhite" width="10" height="13"/>
+        <image name="pondr_logo" width="209" height="209"/>
+    </resources>
+</document>
